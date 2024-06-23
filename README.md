@@ -1,6 +1,6 @@
 # tictactoe-reagent
 
-FIXME: Project needs to be updated, currently broken sorry.
+FIXME: Write a one-line description of your library/project.
 
 ## Overview
 
