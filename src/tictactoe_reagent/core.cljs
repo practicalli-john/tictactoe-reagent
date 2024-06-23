@@ -1,5 +1,7 @@
 (ns tictactoe-reagent.core
-    (:require [reagent.core :as reagent :refer [atom]]))
+    (:require
+     [reagent.dom :as rdom]
+     [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
 ;; (devtools.core/set-pref! :dont-detect-custom-formatters true)
@@ -108,9 +110,7 @@
          :cross [cell-cross x-cell y-cell]
          :nought [cell-nought x-cell y-cell]))]]])
 
-
-(reagent/render-component [tictactoe-game]
-                          (. js/document (getElementById "app")))
+(rdom/render [tictactoe-game] (js/document.getElementById "app"))
 
 (defn on-js-reload []
   ;; optionally touch your app-state to force rerendering depending on

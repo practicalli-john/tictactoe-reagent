@@ -10,7 +10,8 @@
                  [org.clojure/clojurescript "1.11.132"]
                  [org.clojure/core.async  "1.6.681"]
                  [reagent "1.2.0"]
-                 [javax.xml.bind/jaxb-api "2.3.1"]]
+                 [cljsjs/react "18.2.0-1"]
+                 [cljsjs/react-dom "18.2.0-1"]]
 
   :plugins [[lein-figwheel "0.5.20"]
             [lein-cljsbuild "1.1.8" :exclusions [[org.clojure/clojure]]]]
